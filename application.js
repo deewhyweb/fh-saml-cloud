@@ -23,6 +23,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(mbaasExpress.fhmiddleware());
 
 app.use('/hello', require('./lib/hello.js'));
+app.use('/items', require('./lib/items.js'));
 app.use('/sso', require('./lib/sso.js'));
 
 // Important that this is last!
